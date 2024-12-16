@@ -40,34 +40,664 @@ a {
 .header .desktopHeader {}
 
 
+/* banner start -------------------------------------------------------------------------------------*/
+
+.Banner {
+    width: 100%;
+    height: auto;
+    background-image: url('assets/bannerImage.png');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0px;
+}
+
+.Banner .bannerInner {
+    width: 1000px;
+    text-align: center;
+    color: white;
+}
+
+.Banner .bannerInner .bannerWelcomeText {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Banner .bannerInner .bannerTagLine {
+    font-size: 46px;
+    margin: 5px 0px 20px 0px;
+}
+
+.Banner .bannerInner .bannerTagLine span {
+    position: relative;
+    font-weight: 600;
+}
+
+.Banner .bannerInner .bannerTagLine span::after {
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 100%;
+    background: #FF6060;
+    left: 40px;
+    bottom: 0;
+}
+
+.Banner .bannerInner .bannerDescription {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+
+}
+
+.Banner .bannerInner .bannerBtn {
+    background: #FF6060;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 15px 23px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Banner .bannerInner .bannerBtn .btnIcon {
+    margin-left: 10px;
+}
+
+/* banner End -------------------------------------------------------------------------------------*/
+
+/* Category Slider start -------------------------------------------------------------------------------------*/
+.categorySwiper {
+    width: 1500px;
+    margin: 100px auto;
+}
+
+.categorySwiper .categoryCard {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+
+.categorySwiper .categoryCard .categoryCardTitle {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.categorySwiper .categoryCard img {
+    width: 120px;
+    height: 120px;
+}
 
 
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none !important;
+}
+
+/* Category Slider End -------------------------------------------------------------------------------------*/
+
+/* Tranding product start -------------------------------------------------------------------------------------*/
+
+.topTrandingProducts {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.twoColsection {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.twoColsection .twoColContentSection .twoColContentTitle {
+    font-size: 36px;
+}
+
+.twoColsection .twoColContentSection .twoColContentTitle span {
+    position: relative;
+    font-weight: 600;
+}
+
+.twoColsection .twoColContentSection .twoColContentTitle span::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 3px;
+    background-color: #FF6060;
+}
+
+.twoColsection .twoColContentSection .description {
+    color: gray;
+    font-size: 16px;
+    margin: 5px 0px;
+    line-height: 1.5em;
+}
+
+.twoColsection .twoColContentSection .btn,
+.twoColsection .btn {
+    background: #FF6060;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 15px 23px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.twoColsection .twoColContentSection .btn img {
+    width: 15px;
+    margin-left: 8px;
+}
+
+.twoColsection .twoColContentSection ul {
+    margin: 20px 0px;
+    margin-left: 20px;
+
+}
+
+.twoColsection .twoColContentSection ul li {
+    color: gray;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 5px 0px;
+}
+
+.productSwiper {
+    margin: 50px 0px;
+}
+
+.productSwiper .productCard {
+    cursor: pointer;
+}
+
+.productSwiper .productCard .imageContainer {
+    position: relative;
+    overflow: hidden;
+}
 
 
+.productSwiper .productCard .imageContainer .heartIconContainer {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #FF6060;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.productSwiper .productCard .imageContainer .heartIconContainer:hover {
+    background-color: white;
+    color: #FF6060;
+}
 
 
+.productSwiper .productCard .imageContainer .productImage {
+    width: 100%;
+    height: auto;
+}
+
+.productSwiper .productCard .imageContainer .btnContainer {
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    justify-content: center;
+    gap: .8rem;
+    transition: all .5s ease;
+}
+
+.productSwiper .productCard .imageContainer:hover .btnContainer {
+    bottom: 20px !important;
+}
+
+.productSwiper .productCard .imageContainer .btnContainer .customizeNow {
+    background: #FF6060;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: .5rem;
+}
+
+.productSwiper .productCard .imageContainer .btnContainer .customizeNow img {
+    object-fit: contain;
+}
+
+.productSwiper .productCard .imageContainer .btnContainer .cartBtn {
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.productSwiper .productCard .imageContainer .btnContainer .cartBtn img {
+    width: 20px;
+    height: auto;
+}
+
+.productSwiper .productCard .productInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    margin-top: 1rem;
+}
+
+.productSwiper .productCard .productInfoContainer .productStars {
+    color: #EAB631;
+}
+
+.productSwiper .productCard .productInfoContainer .productStars .productCount {
+    color: black;
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.productSwiper .productCard .productInfoContainer .productInfoTitle {
+    font-size: 19px;
+    color: black;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.productSwiper .productCard .productInfoContainer .productInfoPrice span {
+    font-size: 19px;
+    color: black;
+    line-height: 1;
+    font-weight: 700;
+    margin-right: 4px;
+}
 
 
+/* Tranding product End -------------------------------------------------------------------------------------*/
 
 
+/* fullWidthBanner start ------------------------------------------------------------------------------------- */
+
+.fullWidthBanner {
+    width: 100%;
+    height: 300px;
+    background-image: url(assets/overlay.png);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 150px 0px;
+}
+
+.fullWidthBanner .topLeftImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fullWidthBanner .bottomRightImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.fullWidthBanner .fullWidthContentContainer {
+    width: 100%;
+    height: 100px;
+    background: #FF6060;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthImageContainer {
+    position: relative;
+}
 
 
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthImageContainer .bookImage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthContentContainer .fullWidthLilDesc {
+    color: white;
+    font-size: 20px;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthContentContainer .fullWidthTitle {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    width: max-content;
+    line-height: 1;
+}
+
+.fullWidthBanner .fullWidthContentContainer .fullWidthInner .fullWidthContentContainer .fullWidthTitle span {
+    rotate: 270deg;
+    position: absolute;
+    font-weight: 500;
+    font-size: 24px;
+    right: -39px;
+    bottom: 14px;
+}
+
+/* fullWidthBanner end ------------------------------------------------------------------------------------- */
+
+/* multiCardCategory start */
+.multiCardCategory {
+    width: 1500px;
+    margin: 100px auto;
+    height: auto;
+}
+
+.multiCardCategory .multiCardCategoryContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1.5fr 1.2fr .7fr;
+    margin-top: 50px;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiMegaImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiTwoRowsec {
+    gap: 1rem;
+    display: grid;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiTwoRowsec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiTwoColsec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper .multiHoverDisplay {
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper:hover .multiHoverDisplay {
+    bottom: 20px;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper .multiHoverTItle {
+    font-size: 18px;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper .multiHoverTItle span {
+    font-weight: 600;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper .iconWrapper {
+    background: #FF6060;
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiCardCategory .multiCardCategoryContainer .multiCardWrapper .iconWrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+/* multiCardCategory end */
 
 
+/* hireDesigner start */
+
+.hireDesigner {
+    width: 1500px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 3rem;
+}
+
+.hireDesigner img {
+    width: 100%;
+}
+
+.hireDesignerContent {
+    display: grid;
+    align-items: center;
+}
+
+/* hireDesigner end */
+
+/* tips_Trends start */
+.tips_Trends {
+    width: 1500px;
+    margin: 100px auto;
+}
+
+.tips_Trends_Swiper {
+    margin-top: 50px;
+}
+
+.tipSlider {
+    background: #F6F6F6;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tipSlider img {
+    width: 100%;
+}
+
+.tipContentWrapper {
+    position: relative;
+    padding: 30px 20px 20px;
+
+}
+
+.tipContentWrapper .tipDate {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    border-radius: 5px;
+    background: #FF6060;
+    color: white;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.tipContentWrapper .tipTitle {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.tipBottomContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tipBottomContainer .tipImageContainer {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.tipBottomContainer .tipImageContainer img {
+    width: 30px;
+}
+
+.tipBottomContainer .tipCommentInfo {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.tipCommentInfo img {
+    width: 20px;
+}
+
+/* tips_Trends end */
+
+.oFFContainer {
+    width: 100%;
+    background: #FF6060;
+    color: white;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 16px;
+}
+
+.oFFContainer .offWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.oFFContainer .offWrapper span {
+    background: black;
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-size: 13px;
+
+}
+
+/* reelWwapper start */
+
+.reelWwapper {
+    width: 1500px;
+    height: auto;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 3rem;
+}
+
+/* -------------------------- */
+/* General Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.reelGradientWrapper {
+    padding: 2rem 0;
+}
+
+.reelWwapper {
+    width: 100%;
+    /* Adjust to responsive layout */
+    max-width: 1500px;
+    /* Prevent overflow */
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 3rem;
+}
 
 
+/* Swiper Section */
+.swiperWrapper {
+    width: 100%;
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+.reelSwipper {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    /* Ensure slides take full width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 1rem;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------- */
+/* reelWwapper end */
 
 
 /* review section -------------------------------------------------------------------------------------*/
